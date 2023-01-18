@@ -21,7 +21,7 @@
     <button id="viewAll">Afiseaza lista</button><br><br>
     <div class="container">
         <div class="createProdus">
-            <form>
+            <form id="form-create">
                 <h3>Nume produs</h3>
                 <input type="text" name="nume" id="nume">
 
@@ -37,11 +37,27 @@
             </form>
         </div>
         <div class="panel">
+
             <p></p>
 
         </div>
     </div>
+    <br>
+    <div class="container container-2">
+        <div class="deleteProdus">
+            <h2>Introduceti ID-ul produsului pe care doriti sa il stergeti</h2>
+            <form id="form-delete">
+                <input type="text" name="deleteId" id="deleteId" placeholder="ID">
+                <br><br>
+                <button id="btn-delete">Sterge</button>
 
+            </form>
+        </div>
+
+        <div class="showTotal">
+        </div>
+
+    </div>
 </body>
 
 </html>

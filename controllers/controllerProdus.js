@@ -51,7 +51,7 @@ const deleteProdus = async (req, res) => {
     let id = req.params.id
     await Produs.destroy({ where: { id: id } })
 
-    res.status(200).send("Produs Sters!")
+    res.status(200).json({ message: "Succes" })
 }
 
 module.exports = {
